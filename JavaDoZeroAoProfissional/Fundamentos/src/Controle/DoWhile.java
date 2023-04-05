@@ -16,5 +16,8 @@ public class DoWhile {
         }while (!texto.equalsIgnoreCase("por favor"));
         System.out.println("Obrigado!");
         sc.close();
+
+
+
     }
 }

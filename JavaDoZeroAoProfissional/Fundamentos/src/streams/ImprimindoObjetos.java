@@ -11,21 +11,19 @@ public class ImprimindoObjetos {
 
         List<String> aprovados = Arrays.asList("Lu", "Gui", "Luca", "Ana");
 
-        System.out.println("Usando o foreach...");
+        System.out.println("Usando o foreach");
         for (String nome: aprovados){
             System.out.println(nome);
         }
 
-        System.out.println("\nUsando o Iterator...");
+        System.out.println("\nUsando Iterator...");
         Iterator<String> it = aprovados.iterator();
         while (it.hasNext()){
             System.out.println(it.next());
         }
 
-        System.out.println("\nUsando Stream...");
+        System.out.println("\nUsando Stream");
         Stream<String> stream = aprovados.stream();
-        stream.forEach(System.out::println); // Laço interno
-
-
+        stream.forEach(System.out::println);
     }
 }
